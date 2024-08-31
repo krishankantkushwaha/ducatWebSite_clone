@@ -45,15 +45,15 @@ grid-template-columns: 50% 50%;}
 .ourlearn p { font-size: 2vw; font-family: serif; text-align: center; margin-left: 140px; font-family:Arial, Helvetica, sans-serif; color: rgb(121, 123, 125);}
 
 #tex1{ margin-left: 80px; margin-top: 50px;   width: 15%; border-bottom: 3px solid orange;   }
-#tex1 p{ margin-bottom: 7px; font-size: 1.7vw; font-family: sans-serif;}
+#tex1 p{ margin-bottom: 5px; font-size: 1.7vw; font-family: sans-serif;}
 
-#tex2{ margin-left: 80px; margin-top: 10px;    display: grid; grid-template-columns:12% 8%; }
-#tex2 p{  font-size: 1.5vw; font-family: sans-serif; border-bottom: 3px solid orange;}
-#tex2 .te input {margin-top: 20px; margin-left: 30px; border-radius: 7px; border-color: blue; height: 25px; color: blue;}
+#tex2{ margin-left: 80px; margin-top: 50px;   width: 13%; border-bottom: 3px solid orange;  }
+#tex2 p{   margin-bottom: 5px; font-size: 1.7vw; font-family: sans-serif;}
+/* #tex2 .te input {margin-top: 20px; margin-left: 30px; border-radius: 7px; border-color: blue; height: 25px; color: blue;} */
 
 .branch{display: grid; grid-template-columns: 25% 25%  25% 25%  ; margin: 20px 85px; gap: 20px; }
 .branch .list1{}
-.branch .list1 .top{background:rgb(105, 105, 225) ;   }
+.branch .list1 .top{background:rgb(105, 105, 225) ; }
 .branch .list1 .top .bottom{background:rgb(187, 224, 239) ; padding: 10px; }
 .branch .list1 .top .bottom p{text-align: center;}
 .branch .list1 .top #me{border: 2px solid black  ; background: white; margin-top: 30px; margin-left: 80px; border-radius: 50%; border-color: rgb(12, 12, 109); max-width: 100%; width: 90px; height: auto;}
@@ -99,13 +99,18 @@ grid-template-columns: 50% 50%;}
 #hohs2{border-bottom: 3px solid orange;   width:19.8%;   margin: 50px 0px 0px 50px; }
 #hohs2 p{font-family:  sans-serif; font-size: 1.7vw;  margin-bottom: 15px;}
 .place{display: grid; grid-template-columns: auto auto auto auto auto auto; margin: 50px 0px 0px 50px; row-gap: 20px; }
-.place .pl img{max-width: 100%; height: auto; width: 150px;  border: 1px solid rgb(192, 188, 188); border-radius: 5px;}
-.pl1 .pl2 img{margin-left: 50px; max-width: 100%; height: auto; width: 150px;  border: 1px solid #08083e; border-radius: 5px; float: left;}
-.pl1{margin-left: 395px; margin-top: 20px;} 
+ .pl img{max-width: 100%; height: auto; width: 150px;  border: 1px solid rgb(192, 188, 188); border-radius: 5px;}
+
+
+.pl1  img{margin-left: 50px; max-width: 100%; height: auto; width: 150px;  border: 1px solid rgb(192, 188, 188);border-radius: 5px; }
+.pl1{ margin-top: 20px; float: left;} 
+
+.pl2 img{margin-left: 50px; max-width: 100%; height: auto; width: 150px;  border: 1px solid rgb(192, 188, 188);border-radius: 5px; }
+.pl2{ margin-top: 20px; float: left;} 
 
 .place img:hover{box-shadow: 1px 2px 3px 2px rgb(201, 194, 194);}
-.pl1 img:hover{box-shadow: 1px 2px 3px 2px rgb(201, 194, 194);}
-
+.pl1  img:hover{box-shadow: 1px 2px 3px 2px rgb(201, 194, 194);}
+.pl2 img:hover{box-shadow: 1px 2px 3px 2px rgb(201, 194, 194);}
 
 
 
@@ -155,6 +160,7 @@ footer .c1 .c1B li{ list-style: none;color: white; font-size: 1.1vw;}
     .middel{  margin-top: 0px; }
     .center{grid-template-columns: auto auto auto;}
 
+    .ourlearn{margin: 60px 90px;}
     .ourlearn span  {  margin-left: 400px; }
 .ourlearn p {  text-align: center; margin-left: 100px; }
 .branch{grid-template-columns: 33% 33%  34%  ;  }
@@ -167,9 +173,12 @@ footer .c1 .c1B li{ list-style: none;color: white; font-size: 1.1vw;}
 
  .review{ grid-template-columns: 33% 33% 33%; }
  .place{ grid-template-columns: auto auto auto auto ;  }
- .pl1{margin-left: 204px;} 
-.pl1 .pl2 img{margin-left: 100px;}
-
+ .pl1  img{width: 150px;}
+ .pl1{ float: left;  margin-top: 14px; margin-left: 0px;} 
+ 
+ .pl2 img{ width: 150px;  }
+ .pl2{ margin-top: 14px; float: left; margin-left: 69px;}
+ 
 footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
 
 
@@ -177,7 +186,7 @@ footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
 @media  only screen and (max-width:992px) {
   .fixed{background: rgb(39, 67, 158); width: 10%; height:35px;  position: sticky; top: 300px; margin-left: 94%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
   .fixed i{transform: rotate(270deg); color: white; margin-top: 10px; margin-left: 10px;}
-  
+
 
     .right{  margin-top: 0px; grid-template-columns: auto auto auto auto ;}
     .slide{ 
@@ -198,57 +207,110 @@ footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
 
 .top_course{ grid-template-columns:50% 50% }
  #tc{ width:13.4%;   margin: 50px 100px 0px 400px;}
- .review{ grid-template-columns: 50% 50%; }
- .place{ grid-template-columns: auto auto auto ;  }
- .pl1{margin-left: 200px;} 
-.pl1 .pl2 img{margin-left: 140px;}
 
-footer .ftop{  grid-template-columns:26% 35% 15%  15% }
+ #hohs{  width:22.7%;   margin: 40px 0px 0px 50px; }
+#hohs p{  margin-bottom: 6px;}
+.review{ grid-template-columns: 50% 50%; margin-top: 20px;}
 
+
+#hohs1{  width:23.5%;   margin: 40px 0px 0px 50px; }
+#hohs1 p{  margin-bottom: 5px;}
+#hohs2{  width:21%;   margin: 40px 0px 0px 50px; }
+#hohs2 p{  margin-bottom: 6px;}
+
+.place{ grid-template-columns: auto auto auto auto ; margin: 30px 20px 0px 50px; gap: 20px; }
+
+
+.pl1  img{width: 150px;}
+.pl1{ float: left;  margin-top: 14px; margin-left: 0px;} 
+
+.pl2 img{ width: 150px;  }
+.pl2{ margin-top: 14px; float: left; margin-left: 27px;}
+
+
+
+
+
+ footer{ margin-top: 150px; }
+ footer .ftop{  grid-template-columns: 30% 35% 15% 15%;   }
+ 
 
 }
 @media  only screen and (max-width:768px) {
-  .fixed{background: rgb(39, 67, 158); width: 14%; height:35px;  position: sticky; top: 300px; margin-left: 91%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
-  .fixed i{transform: rotate(270deg); color: white; margin-top: 10px; margin-left: 10px;}
+  .fixed{background: rgb(39, 67, 158); width: 20%; height:35px;  position: sticky; top: 300px; margin-left: 88%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
+  .fixed i{transform: rotate(270deg); color: white; margin-top: 10px; }
   
+  .header1{ height: 170px; }
+  header{ padding: 7px;  margin: 30px 20px; 
+  display: grid;
+  grid-template-columns: 30% auto;}
+  header .left img{max-width: 100%; width: 200px; height: auto; }
+.right{ grid-template-columns: auto auto auto; margin-left: 10px;}
 
-    .right{grid-template-columns: auto auto auto auto;}
-    .slide{  
-        grid-template-columns: 100%;  margin-left: 150px; }
-        .text p{ margin-top: 0px; margin-left: 20px;}
-.slide .im img{margin-left: 0px;}
+   .slide{   grid-template-columns: 40% 50%;  margin: 10px 10px; }
+    .slide .text p{  margin-top: 90px; margin-left: 20px; color: rgb(55, 52, 52); font-weight: bold; font-family: sans-serif;}
+    /* .im{background: orange;} */
+    .slide .im img{  width: 200px; margin-top:10px; margin-left: 30px;}
 
 
-.middel{ grid-template-columns: auto  auto;  margin-top: 0px;}
+.middel{ grid-template-columns: auto  auto;  margin-top: 0px; }
 
-.center{ grid-template-columns: auto; width: auto;}
-.ourlearn span  {  margin-left: 100px; }
-.ourlearn p {  text-align: center; margin-left: 50px; }
+#tex{ margin-left: 10px; margin-top: 30px;   width: 19%; border-bottom: 2px solid orange;  }
+#tex p{ font-size: 1.7vw; font-family: sans-serif;}
+.center{grid-template-columns: auto; width: 80%; margin-left: 30px;}
+ 
+.ourlearn{margin: 30px 50px;}
+.ourlearn span  {  margin-left: 120px; }
+.ourlearn p { margin-left: 0px;  }
 
-#tex1{ margin-left: 80px; margin-top: 50px;   width: 17%;   }
-#tex2{ margin-left: 80px; margin-top: 10px;    display: grid; grid-template-columns:15% 8%; }
-#tex2 .te input {margin-top: 20px; margin-left: 30px; border-radius: 7px; border-color: blue; height: 25px; color: blue;}
-.branch{grid-template-columns:   100%  ;  }
-.contact{   grid-template-columns: 100%; height: 412px;}
-.contact #left3 h1{ text-align: center;  margin-left: 0px;}
-.contact #left3 p{text-align: center; margin-left: 15px; }
+ #tex1{ margin-left: 30px; margin-top: 40px;   width: 17%;   }
+#tex2{ margin-left: 30px; margin-top: 10px;  }
+/* #tex2 .te input {margin-top: 20px; margin-left: 30px; border-radius: 7px; border-color: blue; height: 25px; color: blue;} */
+.branch{grid-template-columns:100%; }
+.branch .list1 .top #me{   margin-top: 30px; margin-left: 30px; }
+
+
+ 
+.contact{    grid-template-columns: 50% 50%; }
+.contact #left3 h1{ text-align: left;  margin-left: 0px;}
+.contact #left3 p{text-align: left; margin-left: 0px; }
 .contact #left3 .left_down{   margin-left: 10px; margin-top: 20px;}
-.contact #right3 img{ width: 200px; height: 200px; margin-left: 148px; }
-.contact #left3 .left_down  h4{ margin-left: 140px; width:90px;background: white; border-radius: 7px; padding: 5px; text-align: center;}
-.contact #left3 #w{margin-left: 170px;  }
-.contact #left3 .left_down #c{margin-left: 170px;  }
+.contact #right3 img{ width: 200px; height: 200px; margin-left:8px;  }
+.contact #left3 .left_down  h4{ margin-left: 30px; width:90px;}
+.contact #left3 #w{margin-left: 60px;  }
+.contact #left3 .left_down #c{margin-left: 70px;  }
 
-.top_course{ grid-template-columns:100%; margin: 20px;}
- #tc{ width:25%;   margin: 50px 100px 0px 170px;}
- .review{ grid-template-columns: 100%; }
+.top_course{ margin:30px 50px 10px 30px;  grid-template-columns: 50% 50%  ; }
+ #tc{width:28%; margin: 40px 36px 0px 0px;}
 
- .place{margin-left: 150px; grid-template-columns: auto auto ;  }
- .pl1{margin-left: 25px;} 
-.pl1 .pl2 img{margin-left: 125px;}
 
-footer .ftop{  grid-template-columns: 40% 45% }
-footer {margin-top: 250px;    }
+ #hohs{  width:24%;   margin: 40px 0px 0px 50px; }
+ #hohs p{  margin-bottom: 5px;}
 
+.review{  grid-template-columns: 100%; margin:30px 40px 0px 20px; }
+.review .review1 p{margin-left: 50px; margin-top: 160px; font-style: italic; word-spacing: 2px; letter-spacing: 1px; margin-right: 30px; font-family: cursive; font-size: 1vw;} 
+
+
+#hohs1{  width:25%;   margin: 40px 0px 0px 50px; }
+  #hohs1 p{  margin-bottom: 5px;}
+#hohs2{  width:21%;   margin: 40px 0px 0px 50px; }
+#hohs2 p{  margin-bottom: 6px;}
+
+.place{ grid-template-columns: auto auto auto ; margin: 30px 20px 0px 50px; gap: 20px; }
+
+
+.pl1  img{width: 120px;}
+.pl1{ float: left;  margin-top: 14px; margin-left: 0px;} 
+
+.pl2 img{ width: 120px;  }
+.pl2{ margin-top: 14px; float: left; margin-left: 105px;}
+
+
+
+
+
+ footer{ margin-top: 150px; }
+ footer .ftop{  grid-template-columns: 40% 45%;   }
+ 
 
 }
-
