@@ -13,7 +13,7 @@ header .right a:hover{color: rgb(74, 72, 72);}
 .fixed{background: rgb(39, 67, 158); width: 10%; height:45px;  position: sticky; top: 280px; margin-left: 93.6%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
 .fixed i{transform: rotate(270deg); color: white; margin-top: 16px; margin-left: 16px;}
 
-
+#home{display: none;}
 
 .slide{display: grid;  margin: 30px 90px;
 grid-template-columns: 50% 50%;}
@@ -74,7 +74,7 @@ grid-template-columns: 50% 50%;}
 
 .top_course{ margin:30px 100px 0px 50px; display: grid; grid-template-columns: 25% 25% 25% 25% ; row-gap: 15px; column-gap: 20px;}
  #tc{border-bottom: 4px solid orange; width:9.5%;   margin: 50px 100px 0px 540px;}
-#tc p{ font-weight: bold; font-family:  sans-serif; margin-bottom: 5px;}
+#tc p{ font-weight: bold; font-family:  sans-serif; margin-bottom: 5px; font-size: 2vw;}
  .top_course .tc{box-shadow: 1px 1px 4px  rgb(179, 176, 176); border: 1px solid rgb(212, 206, 206); border-radius: 4px;  }
 .top_course .tc p{ margin-left: 20px; font-size: 1.2vw; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: rgb(10, 62, 152)}
 .top_course .tc:hover{background: rgb(13, 91, 173); }
@@ -143,8 +143,8 @@ footer .c1 .c1B li{ list-style: none;color: white; font-size: 1.1vw;}
 
 
 
-@media  only screen and (max-width:1200px) {
-  .fixed{background: rgb(39, 67, 158); width: 10%; height:35px;  position: sticky; top: 300px; margin-left: 94%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
+@media  only screen and (max-width:1200px)and (min-width:993px) {
+  .fixed{background: rgb(39, 67, 158); width: 11%; height:35px;  position: sticky; top: 300px; margin-left: 94%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
   .fixed i{transform: rotate(270deg); color: white; margin-top: 10px; margin-left: 16px;}
   
     
@@ -177,14 +177,14 @@ footer .c1 .c1B li{ list-style: none;color: white; font-size: 1.1vw;}
  .pl1{ float: left;  margin-top: 14px; margin-left: 0px;} 
  
  .pl2 img{ width: 150px;  }
- .pl2{ margin-top: 14px; float: left; margin-left: 69px;}
+ .pl2{ margin-top: 14px; float: left; margin-left: 34px;}
  
 footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
 
 
 }
-@media  only screen and (max-width:992px) {
-  .fixed{background: rgb(39, 67, 158); width: 10%; height:35px;  position: sticky; top: 300px; margin-left: 94%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
+@media  only screen and (max-width:992px)and (min-width:769px)  {
+  .fixed{background: rgb(39, 67, 158); width: 12%; height:35px;  position: sticky; top: 300px; margin-left: 93%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
   .fixed i{transform: rotate(270deg); color: white; margin-top: 10px; margin-left: 10px;}
 
 
@@ -220,12 +220,12 @@ footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
 
 .place{ grid-template-columns: auto auto auto auto ; margin: 30px 20px 0px 50px; gap: 20px; }
 
-
 .pl1  img{width: 150px;}
 .pl1{ float: left;  margin-top: 14px; margin-left: 0px;} 
 
 .pl2 img{ width: 150px;  }
-.pl2{ margin-top: 14px; float: left; margin-left: 27px;}
+.pl2{ margin-top: 14px; float: left; margin-left: 10px;}
+
 
 
 
@@ -236,16 +236,16 @@ footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
  
 
 }
-@media  only screen and (max-width:768px) {
-  .fixed{background: rgb(39, 67, 158); width: 20%; height:35px;  position: sticky; top: 300px; margin-left: 88%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
+@media  only screen and (max-width:768px)  {
+  .fixed{background: rgb(39, 67, 158); width: 23%; height:35px;  position: sticky; top: 300px; margin-left: 87%;  border-radius: 0px 0px 13px 13px; transform: rotate(90deg);}
   .fixed i{transform: rotate(270deg); color: white; margin-top: 10px; }
   
   .header1{ height: 170px; }
   header{ padding: 7px;  margin: 30px 20px; 
   display: grid;
   grid-template-columns: 30% auto;}
-  header .left img{max-width: 100%; width: 200px; height: auto; }
-.right{ grid-template-columns: auto auto auto; margin-left: 10px;}
+  header .left img{max-width: 100%; width: 150px; height: auto; }
+.right{ grid-template-columns: auto auto auto ; margin-left: 0px;}
 
    .slide{   grid-template-columns: 40% 50%;  margin: 10px 10px; }
     .slide .text p{  margin-top: 90px; margin-left: 20px; color: rgb(55, 52, 52); font-weight: bold; font-family: sans-serif;}
@@ -303,7 +303,7 @@ footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
 .pl1{ float: left;  margin-top: 14px; margin-left: 0px;} 
 
 .pl2 img{ width: 120px;  }
-.pl2{ margin-top: 14px; float: left; margin-left: 105px;}
+.pl2{ margin-top: 14px; float: left; margin-left: 110px;}
 
 
 
@@ -312,5 +312,94 @@ footer .ftop{  grid-template-columns: 25% 32% 18% 21%;  }
  footer{ margin-top: 150px; }
  footer .ftop{  grid-template-columns: 40% 45%;   }
  
+
+}
+
+
+
+
+ @media only screen and (max-width:382px) {
+  .fixed{background: rgb(39, 67, 158); width: 100%; height:35px;  position: sticky; top: 444px; margin-left: 0px;  border-radius: 13px 13px 0px 0px; transform: none; z-index: 2;}
+  .fixed i{transform: none; color: white; margin-top: 10px; margin-left: 80px; }
+
+#home{display: block;  margin-left: 20px;  }
+ 
+ .header1{ height: 100px; }
+ header{ padding: 7px;  margin: 30px 20px; 
+ display: grid;
+ grid-template-columns: 30% auto;}
+ header .left img{max-width: 100%; width: 200px; height: auto; }
+.right{display: none; }
+
+
+.ourlearn{margin-top: 10px ;  margin-left: 0px; }
+.ourlearn span  { margin-left: 130px;  border-bottom: 2px solid orange; }
+.ourlearn p {  margin-left: 70px; }
+
+#tex1{ margin-left: 50px; margin-top: 30px;   width: 15%; border-bottom: 2px solid orange;   }
+#tex1 p{ margin-bottom: 5px; font-size: 1.7vw; font-family: sans-serif;}
+
+#tex2{ margin-left: 50px; margin-top: 10px;   width: 13%; border-bottom: 2px solid orange;  }
+#tex2 p{   margin-bottom: 5px; font-size: 1.7vw; font-family: sans-serif;}
+
+
+.branch{ grid-template-columns: 100%  ; margin: 20px 45px;  }
+
+
+.branch .list1 .top #me{ margin-left: 30px; }
+.branch .list1 .top #star{  width: 65px; height: 22px; float: left; margin-top: 15px; background: rgb(12, 12, 212);}
+
+.branch .list1 .top .bottom button{background: linear-gradient(rgb(62, 62, 198), rgb(117, 117, 234)); color: white; text-align: center; margin-left: 40px; padding: 5px; width: 70%;}
+
+
+
+.contact{  grid-template-columns: 100%; }
+
+
+.contact #left3 h1{ text-align: left;  margin-left: 50px;}
+.contact #left3 p{text-align: left; margin-left: 50px; }
+.contact #left3 .left_down{   margin-left: 10px; margin-top: 20px;}
+.contact #right3 img{ width: 150px; height: 150px; margin-left:100px;  }
+.contact #left3 .left_down  h4{ margin-left: 80px; }
+.contact #left3 #w{margin-left: 120px;  }
+.contact #left3 .left_down #c{margin-left: 130px;   }
+
+
+.top_course{ margin:30px 60px 0px 50px; display: grid; grid-template-columns:50% 50% ; row-gap: 15px; column-gap: 20px;}
+ #tc{border-bottom: 2px solid orange; width:16%;   margin: 50px 100px 0px 50px;}
+#tc p{ font-weight: bold; font-family:  sans-serif; margin-bottom: 1vw;}
+ .top_course .tc{box-shadow: 1px 1px 4px  rgb(179, 176, 176); border: 1px solid rgb(212, 206, 206); border-radius: 4px;  }
+.top_course .tc p{ margin-left: 20px; font-size: 1.2vw; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: rgb(10, 62, 152)}
+.top_course .tc:hover{background: rgb(13, 91, 173); }
+
+
+
+
+#hohs{border-bottom: 2px solid orange;   width:23%;   margin: 40px 0px 0px 50px; }
+  #hohs p{font-family:  sans-serif; font-size: 1.7vw;  margin-bottom: 5px;}
+
+.review{z-index: 1; display: grid; grid-template-columns: 100%; margin:10px 0px 0px 20px; gap: 40px; padding: 20px;position: relative; z-index: 1;}
+
+
+#hohs1{border-bottom: 2px solid orange;   width:24%;   margin: 20px 0px 0px 50px; }
+  #hohs1 p{font-family:  sans-serif; font-size: 1.7vw;  margin-bottom: 5px;}
+
+
+#hohs2{border-bottom: 2px solid orange;   width:22%;   margin: 20px 0px 0px 50px; }
+#hohs2 p{font-family:  sans-serif; font-size: 1.7vw;  margin-bottom: 5px;}
+.place{ grid-template-columns: auto auto auto ; margin: 30px 0px 0px 20px;}
+
+
+
+.pl1  img{width: 100px;}
+.pl1{ float: left;  margin-top: 14px; margin-left: 20px;} 
+
+.pl2 img{ width: 100px;  }
+.pl2{ margin-top: 14px; float: left; margin-left: 5px;}
+
+
+footer{ margin-top: 120px; }
+footer .ftop{  grid-template-columns: 50% 50%;  margin-left: 20px; }
+footer .c1 .c {margin-left: 30px; color: skyblue; font-family:sans-serif;}
 
 }
